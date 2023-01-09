@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="css/style.css" rel="stylesheet">
+
+  <title>Menu Bar Section</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-light bg-light fixed-top navcustom">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Side Navbar</a>
+        <div class="offcanvas offcanvas-start show" tabindex="1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-cover">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./img/user-regular.svg" alt="User Icon">
+                WELCOME, GUEST
+              </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="chat-signup">
+              <a href="#" class="btn btn-signup"><b>SIGN UP</b></a>
+              <a href="#" class="btn btn-chatus">
+                <span>
+                  <img src="./img/chat.svg" alt="chat-info">
+                </span>
+                CHAT TO US
+              </a>
+            </div>
+            <hr />
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>My account</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" aria-expanded="false" href="#" id="offcanvasNavbarDropdown" role="button"
+                    data-bs-toggle="dropdown">
+                    <span> 
+                      <i class="fa fa-desktop" aria-hidden="true"></i>Games
+                    </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" 
+                    data-bs-popper="none">
+                    <div class="top-button">
+                      <button type="button" onclick="closeChild()" class="btn-close text-reset ml-auto" aria-label="Close"></button>
+                      <a href="#" class="btn btn-all-other">All Other</a>
+                    </div>
+                    <ul>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Action</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Another action</a></li>
+                    
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Promotions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Loyalty</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Vip</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Banking</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span> 
+                      <i class="fa fa-desktop" aria-hidden="true"></i>Support
+                    </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
+                    <div class="top-button">
+                      <button type="button" class="btn-close text-reset ml-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <a href="#" class="btn btn-all-other">All Other</a>
+                    </div>
+                    <ul>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Action</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Another action</a></li>
+                    
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown1" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span> 
+                      <i class="fa fa-desktop" aria-hidden="true"></i>Language
+                    </span> <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown1">
+                    <div class="top-button">
+                      <button type="button" class="btn-close text-reset ml-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      <a href="#" class="btn btn-all-other">All Other</a>
+                    </div>
+                    <ul>
+                      <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Action</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Another action</a></li>
+                    
+                    <li><a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Something else here</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+
+html {
+    @extend %height;
+}
+body {
+    @extend %height;
+    font-family: $defaultFont;
+    font-size: 14px;
+}
+.wrapper {
+    @extend %height;
+    background: $defaultBg;
+}
+

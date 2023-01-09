@@ -1,0 +1,19 @@
+%min-height {
+    min-height: 100%;
+}
+%max-height {
+    max-height: 100%;
+}
+%height {
+    height: 100%;
+}
+
+%active-and-dropdown {
+    display: flex;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    line-height: 1.5;
+    align-items: center;
+    background-color: #bd0e8d;
+    color: #fff;
+ }
